@@ -1,0 +1,11 @@
+.accordion div:has(input:checked) > label > span:last-of-type {
+  background-color: #1f2937;
+  transform: rotate(180deg);
+  transition: transform 0.5s linear;
+
+  img {
+    background: transparent;
+    filter: hue-rotate(250deg) invert(1);
+    transition: all 0.3s linear;
+  }
+}
