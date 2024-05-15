@@ -9,60 +9,37 @@ import { useRef } from 'react';
 export default function Testimonial() {
   const testimonials = [
     {
-      name: 'Amelia Joseph',
-      image: Testimony1,
-      title: 'Chief Manager',
-      testimony: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations.'
+      "name": "Anıl Esen",
+      "title": "İşletme Yöneticisi",
+      "testimony": "Bigarson ile vizyonum kolayca hayat buldu. Hem samimi hem de profesyonel yaklaşımlarıyla süreç adeta bir esinti gibi geçti. Yaratıcılık akıp gitti ve sonuçlar beklentilerimin ötesindeydi.",
+      "image": Testimony1
     },
     {
-      name: 'Amelia Joseph',
-      image: Testimony1,
-      title: 'Chief Manager',
-      testimony: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations.'
+      "name": "Ali Yılmaz",
+      "title": "Restoran Sahibi",
+      "testimony": "Bigarson sayesinde müşterilerime daha iyi hizmet sunabiliyorum. QR menü uygulaması sayesinde siparişler hızlanıyor ve müşteri memnuniyeti artıyor.",
+      "image": Testimony1
     },
     {
-      name: 'Amelia Joseph',
-      image: Testimony1,
-      title: 'Chief Manager',
-      testimony: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations.'
+      "name": "Ayşe Kaya",
+      "title": "Şef",
+      "testimony": "Bigarson ile menü yönetimi çok daha kolay hale geldi. Her zaman güncel kalmak ve yenilikleri müşterilere sunmak artık çok daha pratik.",
+      "image": Testimony1
     },
     {
-      name: 'Amelia Joseph',
-      image: Testimony1,
-      title: 'Chief Manager',
-      testimony: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations.'
+      "name": "Mehmet Demir",
+      "title": "Müşteri",
+      "testimony": "Bigarson sayesinde restoran deneyimim çok daha keyifli hale geldi. Menüyü görmek için QR kodunu taratmak hem hızlı hem de ilginç bir deneyim sunuyor.",
+      "image": Testimony1
     },
     {
-      name: 'Amelia Joseph',
-      image: Testimony1,
-      title: 'Chief Manager',
-      testimony: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations.'
-    },
-    {
-      name: 'Amelia Joseph',
-      image: Testimony1,
-      title: 'Chief Manager',
-      testimony: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations.'
-    },
-    {
-      name: 'Amelia Joseph',
-      image: Testimony1,
-      title: 'Chief Manager',
-      testimony: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations.'
-    },
-    {
-      name: 'Amelia Joseph',
-      image: Testimony1,
-      title: 'Chief Manager',
-      testimony: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations.'
-    },
-    {
-      name: 'Amelia Joseph',
-      image: Testimony1,
-      title: 'Chief Manager',
-      testimony: 'My vision came alive effortlessly. Their blend of casual and professional approach made the process a breeze. Creativity flowed, and the results were beyond my expectations.'
+      "name": "Zeynep Tekin",
+      "title": "Garson",
+      "testimony": "Bigarson, işimi yapmayı çok daha kolay hale getirdi. Artık müşterilere menüleri fiziksel olarak vermekle uğraşmıyorum, sadece QR kodunu taratmaları yeterli oluyor.",
+      "image": Testimony1
     }
   ]
+  
 
   const testimonialRef = useRef<HTMLDivElement>(null)
 

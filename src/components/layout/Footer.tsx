@@ -12,13 +12,12 @@ export default function Footer() {
           </div>
           <div className="flex-[52%] grow-0 flex gap-[90px] text-white text-sm leading-[21px]">
             <p className="w-min">
-              Bigarson Limited Aş
-              Balmumcu Mahallesi
-              İstanbul/Beşiktaş
+              Bigarson
+              Ankara/Çankaya
             </p>
             <div className="flex flex-col gap-2">
-              <p>+0555 555 55 55</p>
-              <p>example@gmail.com</p>
+              <p>+0545 287 31 39</p>
+              <p>info@bigarson.com</p>
             </div>
             <div className="flex flex-col gap-2">
               <Link prefetch={false} className="underline" href="#home">Anasayfa</Link>
