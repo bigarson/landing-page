@@ -5,7 +5,7 @@ import './FAQ.scss'
 export default function FAQ() {
   return (
     <div className="section-features max-w-[1200px] mx-auto py-[100px]" id="faq">
-      <div>
+      <div className="px-4 xl:p-0">
         <p className="text-[#5151F4] text-lg">Sıkça Sorulan Sorular</p>
         <p className="text-[#1F2937] text-4xl leading-[58px] font-semibold">Daha Fazlası için Bizimle İletişime Geçebilirsiniz</p>
       </div>
@@ -18,7 +18,7 @@ export default function FAQ() {
           <input type="radio" id="faq-1" name="accordion" className="hidden peer" />
 
           {/* Label for toggling the accordion */}
-          <label htmlFor="faq-1" className="flex justify-between w-full p-10 cursor-pointer group">
+          <label htmlFor="faq-1" className="flex justify-between w-full p-10 cursor-pointer text-left group">
             <span className="font-semibold text-2xl text-[#1F2937]">
               Restoranlar için QR kodlu menü nedir?
             </span>
@@ -39,7 +39,7 @@ export default function FAQ() {
           <input type="radio" id="faq-2" name="accordion" className="hidden peer" />
 
           {/* Label for toggling the accordion */}
-          <label htmlFor="faq-2" className="flex justify-between w-full p-10 cursor-pointer">
+          <label htmlFor="faq-2" className="flex justify-between w-full p-10 cursor-pointer text-left">
             <span className="font-semibold text-2xl text-[#1F2937]">
               QR kodlu menüler restoranlarda nasıl çalışır?
             </span>
@@ -61,7 +61,7 @@ export default function FAQ() {
           <input type="radio" id="faq-3" name="accordion" className="hidden peer" />
 
           {/* Label for toggling the accordion */}
-          <label htmlFor="faq-3" className="flex justify-between w-full p-10 cursor-pointer">
+          <label htmlFor="faq-3" className="flex justify-between w-full p-10 cursor-pointer text-left">
             <span className="font-semibold text-2xl text-[#1F2937]">
               QR kod menüleri güvenli ve emniyetli mi?
             </span>
@@ -83,7 +83,7 @@ export default function FAQ() {
           <input type="radio" id="faq-4" name="accordion" className="hidden peer" />
 
           {/* Label for toggling the accordion */}
-          <label htmlFor="faq-4" className="flex justify-between w-full p-10 cursor-pointer">
+          <label htmlFor="faq-4" className="flex justify-between w-full p-10 cursor-pointer text-left">
             <span className="font-semibold text-2xl text-[#1F2937]">
               Restoranım için nasıl QR kod menüsü oluşturabilirim?
             </span>
@@ -105,7 +105,7 @@ export default function FAQ() {
           <input type="radio" id="faq-5" name="accordion" className="hidden peer" />
 
           {/* Label for toggling the accordion */}
-          <label htmlFor="faq-5" className="flex justify-between w-full p-10 cursor-pointer">
+          <label htmlFor="faq-5" className="flex justify-between w-full p-10 cursor-pointer text-left">
             <span className="font-semibold text-2xl text-[#1F2937]">
               Restoranlarda QR kodlu menü kullanmanın faydaları nelerdir?
             </span>
@@ -127,7 +127,7 @@ export default function FAQ() {
           <input type="radio" id="faq-6" name="accordion" className="hidden peer" />
 
           {/* Label for toggling the accordion */}
-          <label htmlFor="faq-6" className="flex justify-between w-full p-10 cursor-pointer">
+          <label htmlFor="faq-6" className="flex justify-between w-full p-10 cursor-pointer text-left">
             <span className="font-semibold text-2xl text-[#1F2937]">
               Bir QR kod menüsünde hangi bilgiler yer almalıdır?
             </span>

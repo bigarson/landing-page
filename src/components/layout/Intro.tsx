@@ -10,8 +10,8 @@ import Image from "next/image";
 export default function intro() {
   return (
 
-    <div className="section-intro flex max-w-[1200px] mx-auto justify-between" id='home'>
-      <div className="mt-[108px] w-[588px]">
+    <div className="section-intro flex max-w-[1200px] mx-auto justify-center px-4 lg:justify-between xl:p-0" id='home'>
+      <div className="mt-[108px] w-[588px] ">
         <p className="font-semibold text-5xl leading-[72px] mb-6">
           <span className="text-[#5151F4]">QR Koduyla </span>
           <span>Masanızda Sipariş Rahatlığı!</span>
@@ -20,13 +20,13 @@ export default function intro() {
         <button className="bg-[#5151F4] text-white rounded-2xl py-4 px-[60px] mt-9 relative" >
           QR Menü Oluştur
 
-          <span className='bg-[#FFC759] text-[#061C3D] px-3 py-[6px] rounded-[3px] rotate-[-19deg] absolute top-[180%] left-[87%] after:content-[""] after:h-2 after:w-2 after:flex after:left-[calc(100%_-_4px)] after:absolute after:bg-[#FFC759] after:top-[calc((100%_-_8px)/2)] after:rotate-45'>
+          <span className='bg-[#FFC759] text-[#061C3D] px-3 py-[6px] rounded-[3px] rotate-[-19deg] absolute top-[180%] left-[87%] after:content-[""] after:h-2 after:w-2 after:flex after:left-[calc(100%_-_4px)] after:absolute after:bg-[#FFC759] after:top-[calc((100%_-_8px)/2)] after:rotate-45 max-[480px]:left-[60%] max-[480px]:top-[210%]'>
             Ücretsiz
           </span>
-          <Image src={Arrow} alt='arrow' width={98} height={61} className='absolute left-[100%]' />
+          <Image src={Arrow} alt='arrow' width={98} height={61} className='absolute left-[100%] max-[480px]:left-[70%] max-[480px]:top-[100%]' />
         </button>
       </div>
-      <div className="w-[462px] h-[482px] mt-[90px] flex justify-center items-center relative">
+      <div className="hidden lg:flex justify-center items-center relative w-[462px] h-[482px] mt-[90px]">
         <Image className="z-20 right-[58px] absolute" src={Phone} alt="app-display" height={600} width={290} />
         <span className="w-[384px] h-[379px] rounded-[500px] bg-[#DBE7F5] block absolute right-0 z-10"></span>
         <span className="w-[60px] h-[60px] rounded-[500px] bg-[#5151F4] block absolute right-[9px] top-[65px] z-0"></span>

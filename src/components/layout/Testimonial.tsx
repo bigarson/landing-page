@@ -39,15 +39,17 @@ export default function Testimonial() {
       "image": Testimony1
     }
   ]
-  
+
 
   const testimonialRef = useRef<HTMLDivElement>(null)
 
   function moveTestimonial(direction: 1 | -1) {
     const container = testimonialRef.current;
     if (container) {
-      const testimonialWidth = 510; // As given in min-w-[486px] from your styling
-      const padding = 120; // Extra padding to apply at the end
+      console.log(container.clientWidth);
+
+      const testimonialWidth = container.clientWidth >= 486 ? 510 : container.clientWidth; // As given in min-w-[486px] from your styling
+      const padding = container.clientWidth >= 486 ? 120 : 0; // Extra padding to apply at the end
       const numTestimonials = testimonials.length;
       const containerWidth = container.clientWidth;
       const maxScroll = container.scrollWidth - containerWidth;
@@ -76,8 +78,8 @@ export default function Testimonial() {
 
   return (
 
-    <div className="section-feedback py-[100px] flex flex-col justify-start max-w-[1200px] mx-auto">
-      <div className="flex justify-between">
+    <div className="section-feedback py-[100px] flex flex-col justify-start max-w-[1200px] mx-auto px-4 xl:px-0">
+      <div className="flex justify-between flex-wrap">
         <div>
           <p className="text-[#5151F4] text-lg">Kullanıcı Yorumları</p>
           <p className="text-[#1F2937] text-4xl leading-[58px] font-semibold">Kullanıcılarımız Neler Söyledi?</p>
@@ -91,10 +93,10 @@ export default function Testimonial() {
           </button>
         </div>
       </div>
-      <div className="flex flex-nowrap gap-6 overflow-hidden mt-[50px] w-[calc(100vw_-_120px)]" ref={testimonialRef}>
+      <div className="flex flex-nowrap gap-6 overflow-scroll mt-[50px] xl:w-[calc(100vw_-_120px)]" ref={testimonialRef}>
         {
           testimonials.map((testimony, key) =>
-            <div key={key} className={`grow-0 min-w-[486px] rounded-2xl p-10 ${key % 2 === 0 ? 'bg-[#F7F9FB]' : 'bg-[#5151F4] text-white'}`}>
+            <div key={key} className={`grow-0 max-sm:min-w-full sm:min-w-[486px] rounded-2xl p-10 ${key % 2 === 0 ? 'bg-[#F7F9FB]' : 'bg-[#5151F4] text-white'}`}>
               <div className='flex gap-6'>
                 {testimony.image && <Image src={testimony.image} alt={testimony.name} width={60} height={60} className='rounded-full h-[60px] w-[60px] object-cover' />}
                 <div className='flex flex-col'>
