@@ -56,7 +56,6 @@ pipeline {
                 sh 'docker rm ${CONTAINER_NAME} || true'
             }
         }
-
         stage('Deploy New Container') {
             steps {
                 echo 'Yeni container başlatılıyor...'
