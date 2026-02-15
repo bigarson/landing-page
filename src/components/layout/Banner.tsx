@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Banner() {
   return (
 
@@ -9,9 +11,11 @@ export default function Banner() {
         <span className="absolute left-[213px] top-[-90px] w-[464px] h-[555px] rounded-[300px] bg-[linear-gradient(177.26deg,_#5151F4_10.7%,_#807AFF_103.87%)] rotate-90"></span>
         <div className="xl:text-center max-xl:flex max-xl:justify-end max-xl:flex-col z-50">
           <p className="font-medium text-white text-lg xl:text-2xl">Şimdi Menünüzü Oluşturun</p>
+          <Link href="http://kratos.bigarson.com/self-service/login/browser">
           <button className="font-semibold text-white rounded-2xl bg-[#FFFFFF33] shadow-[0_4px_24px_0_#5151F41A] mt-6 py-4 px-[60px]">
             QR Menü Oluştur
           </button>
+          </Link>
         </div>
       </div>
     </div>
