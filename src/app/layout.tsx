@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -21,6 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>{children}</body>
+      <Script
+          src="https://umami.bigarson.com/script.js"
+          data-website-id="99ee8a1f-1431-48c1-9330-38e0bd800de5"
+          strategy="afterInteractive"
+        />
     </html>
   );
 }
