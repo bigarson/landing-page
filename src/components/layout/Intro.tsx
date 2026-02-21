@@ -21,11 +21,6 @@ export default function intro() {
         <Link href="http://kratos.bigarson.com/self-service/login/browser">
         <button className="bg-[#5151F4] text-white rounded-2xl py-4 px-[60px] mt-9 relative" >
           QR Menü Oluştur
-
-          <span className='bg-[#FFC759] text-[#061C3D] px-3 py-[6px] rounded-[3px] rotate-[-19deg] absolute top-[180%] left-[87%] after:content-[""] after:h-2 after:w-2 after:flex after:left-[calc(100%_-_4px)] after:absolute after:bg-[#FFC759] after:top-[calc((100%_-_8px)/2)] after:rotate-45 max-[480px]:left-[60%] max-[480px]:top-[210%]'>
-            Ücretsiz
-          </span>
-          <Image src={Arrow} alt='arrow' width={98} height={61} className='absolute left-[100%] max-[480px]:left-[70%] max-[480px]:top-[100%]' />
         </button>
         </Link>
       </div>
