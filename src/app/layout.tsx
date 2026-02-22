@@ -22,11 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>{children}</body>
-      {/* <Script
+      <Script
           src="https://umami.bigarson.com/script.js"
           data-website-id="99ee8a1f-1431-48c1-9330-38e0bd800de5"
           strategy="afterInteractive"
-        /> */}
+        />
     </html>
   );
 }
