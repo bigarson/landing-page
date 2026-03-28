@@ -18,16 +18,18 @@ export default function intro() {
           <span>Masanızda Sipariş Rahatlığı!</span>
         </p>
         <p className="text-base opacity-80">Restoran işletmecileri için müşteri memnuniyeti ve işletme verimliliği her zaman en önemli önceliklerden biridir. Restoranınızın menüsünü QR kodlarıyla pazarlamak, müşterilere benzersiz bir deneyim sunmanın yanı sıra işletmenizin etkisini artırmanın da harika bir yoludur.</p>
-        <Link href="http://kratos.bigarson.com/self-service/login/browser">
-        <button className="bg-[#5151F4] text-white rounded-2xl py-4 px-[60px] mt-9 relative" >
-          QR Menü Oluştur
-
-          <span className='bg-[#FFC759] text-[#061C3D] px-3 py-[6px] rounded-[3px] rotate-[-19deg] absolute top-[180%] left-[87%] after:content-[""] after:h-2 after:w-2 after:flex after:left-[calc(100%_-_4px)] after:absolute after:bg-[#FFC759] after:top-[calc((100%_-_8px)/2)] after:rotate-45 max-[480px]:left-[60%] max-[480px]:top-[210%]'>
-            Ücretsiz
-          </span>
-          <Image src={Arrow} alt='arrow' width={98} height={61} className='absolute left-[100%] max-[480px]:left-[70%] max-[480px]:top-[100%]' />
-        </button>
-        </Link>
+        <div className="flex flex-col sm:flex-row gap-4 mt-9">
+          <Link href="http://kratos.bigarson.com/self-service/login/browser">
+            <button className="bg-[#5151F4] text-white rounded-2xl py-4 px-[40px] sm:px-[60px] relative">
+              QR Menü Oluştur
+            </button>
+          </Link>
+          <Link href="https://menu.bigarson.com/menu/673068b5-e7fb-4800-b543-e49305f512a3">
+            <button className="bg-white text-[#5151F4] border border-[#5151F4] rounded-2xl py-4 px-[40px] sm:px-[60px] relative">
+              Demo Menüyü Gör
+            </button>
+          </Link>
+        </div>
       </div>
       <div className="hidden lg:flex justify-center items-center relative w-[462px] h-[482px] mt-[90px]">
         <Image className="z-20 right-[58px] absolute" src={Phone} alt="app-display" height={600} width={290} />
